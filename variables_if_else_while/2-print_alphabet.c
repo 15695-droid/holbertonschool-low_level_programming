@@ -7,7 +7,7 @@
  */
 int main(void)
 	{
-	i == "a"
+	i = "a"
 	while (i <= "z")
 	putchar (i)
 	i = i + 1
