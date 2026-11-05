@@ -13,15 +13,15 @@ char C;
 c = 'a';
 C = 'A';
 
-while (c <= 'z')
+    while (c <= 'z')
 {
-    putchar(c);
-    c = c + 1;
+putchar(c);
+c = c + 1;
 }
-while (C <= 'Z')
+    while (C <= 'Z')
 {
-    putchar(C);
-    C = C +1;
+putchar(C);
+C = C + 1;
 }
 putchar('\n');
 return (0);
