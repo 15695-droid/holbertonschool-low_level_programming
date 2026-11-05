@@ -15,6 +15,6 @@ while (n < 10)
 printf("%d", n);
 n = n + 1;
 }
-printf('\n');
-retun (0);
+printf("\n");
+return (0);
 }
