@@ -12,9 +12,9 @@ c = 'a'
 
 while (c <= 'z')
 {
-if(c != 'q' && != 'e')
+if (c != 'q' && != 'e')
 putchar(c);
-c = c + 1 ;
+c = c +1;
 }
 putchar('\n')
 return (0)
