@@ -5,7 +5,7 @@
 *
 * return: always 0 (success)
 */
-int main(NULL)
+int main(void)
 {
 char c
 c = 'a'
