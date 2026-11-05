@@ -12,7 +12,7 @@ n = 0;
 
 while (n < 10)
 {
-putchar(n);
+putchar(n + '0');
 n = n + 1;
 }
 putchar('\n');
