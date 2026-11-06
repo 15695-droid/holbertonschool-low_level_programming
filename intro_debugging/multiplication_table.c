@@ -15,7 +15,7 @@ printf("\n");
 }
 	
 /* -- DO NOT Modify the code below this line -- */
-19	
+
 int main(void)
 {
 print_table(4);
