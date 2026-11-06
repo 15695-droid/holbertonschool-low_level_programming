@@ -2,9 +2,9 @@
 
 /**
  * print_most_numbers - print 0-14 10 times.
- *
+ * followed by a new line
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
 int r;
 int i;
