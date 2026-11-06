@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * _isupper - checks for capital letters.
+ * _isupper - checks for capital letters.\
+ * @c: checks for character
  *
  * Return: 1 if successful otherwise 0.
  */

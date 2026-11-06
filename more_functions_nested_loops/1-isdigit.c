@@ -3,6 +3,7 @@
 
 /**
  * _isdigit - checks for digits.
+  * @c: checks for character
  *
  * Return: 1 if successful 0 if not.
  */
