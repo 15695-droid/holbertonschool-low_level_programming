@@ -12,7 +12,7 @@ int i;
 
 for (i = 1; i <= 100; i++)
 {
-if 
+if
 (i != 1)
 {
 printf(" ");
