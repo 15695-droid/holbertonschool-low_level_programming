@@ -52,13 +52,41 @@ static unsigned long reduce_checksum(void)
 
 int main(void)
 {
+    clock_t start;
+    clock_t end;
+    clock_t totalStart;
+    clock_t totalEnd;
+    double total;
+    double elapsedA;
+    double elapsedB;
+    double elapsedC;
     unsigned long checksum;
 
     /* Students must add clock-based timing and print required lines. */
+    totalStart = clock();
 
+    start = clock();
     build_dataset();
+    end = clock();
+    elapsedA = (double)(end - start) / (double) CLOCKS_PER_SEC
+
+    start = clock();
     process_dataset();
+    end = clock()
+    elapsedB = (double)(end - start)/ (double) CLOCKS_PER_SEC
+
+    start = clock();
     checksum = reduce_checksum();
+    end = clock()
+    elapsedC = (double)(end - start)/ (double) CLOCKS_PER_SEC
+
+    totalEnd = clock()
+    total = (double)(totalEnd - totalStart)/(double) CLOCKS_PER_SEC
+
+    printf("TOTAL seconds: %.6f" total)
+    printf("BUILD_DATA seconds: %.6f" elapsedA)
+    printf("PROCESS seconds: %.6f" elapsedB)
+    printf("REDUCE seconds: %.6f" elapsedC)
 
     if (checksum == 0ul)
         printf("impossible\n");
