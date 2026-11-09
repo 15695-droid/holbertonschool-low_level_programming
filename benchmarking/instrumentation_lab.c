@@ -68,25 +68,25 @@ int main(void)
     start = clock();
     build_dataset();
     end = clock();
-    elapsedA = (double)(end - start) / (double) CLOCKS_PER_SEC
+    elapsedA = (double)(end - start) / (double) CLOCKS_PER_SEC;
 
     start = clock();
     process_dataset();
-    end = clock()
-    elapsedB = (double)(end - start)/ (double) CLOCKS_PER_SEC
+    end = clock();
+    elapsedB = (double)(end - start)/ (double) CLOCKS_PER_SEC;
 
     start = clock();
     checksum = reduce_checksum();
-    end = clock()
-    elapsedC = (double)(end - start)/ (double) CLOCKS_PER_SEC
+    end = clock();
+    elapsedC = (double)(end - start)/ (double) CLOCKS_PER_SEC;
 
-    totalEnd = clock()
-    total = (double)(totalEnd - totalStart)/(double) CLOCKS_PER_SEC
+    totalEnd = clock();
+    total = (double)(totalEnd - totalStart)/(double) CLOCKS_PER_SEC;
 
-    printf("TOTAL seconds: %.6f" total)
-    printf("BUILD_DATA seconds: %.6f" elapsedA)
-    printf("PROCESS seconds: %.6f" elapsedB)
-    printf("REDUCE seconds: %.6f" elapsedC)
+    printf("TOTAL seconds: %.6f\n", total);
+    printf("BUILD_DATA seconds: %.6f\n", elapsedA);
+    printf("PROCESS seconds: %.6f\n", elapsedB);
+    printf("REDUCE seconds: %.6f\n", elapsedC);
 
     if (checksum == 0ul)
         printf("impossible\n");
