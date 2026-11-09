@@ -1,0 +1,4 @@
+TOTAL seconds: 0.000751
+BUILD DATA seconds: 0.000296
+PROCESS seconds: 0.000307
+REDUCE seconds: 0.000142
