@@ -15,6 +15,6 @@ Single-pass algorithm result: 25000
 Single-pass algorithm time: 0.000116 seconds
 
 average Naive algorithm time: 2.750522
-average Single-pass algorithm time: 1.093
+average Single-pass algorithm time: 1.00093
 
-Naive algorithm time is 1.657522 slower than average Single-pass algorithm time.
+Naive algorithm time is 2.750413 slower than average Single-pass algorithm time.
