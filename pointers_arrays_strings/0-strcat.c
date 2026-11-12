@@ -2,7 +2,7 @@
 
 /**
  *_strcat - append src to dest
- * @dest: destination string (must have enough space)
+ * @dest: destination string
  * @src: source string
  *
  * Return: *dest
