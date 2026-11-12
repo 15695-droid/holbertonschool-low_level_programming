@@ -3,7 +3,7 @@
  * _strncpy - copies a string
  * @dest: destination string
  * @src: source string
- * @n: characters to be copied 
+ * @n: characters to be copied
  *
  * Return: *dest
  */
