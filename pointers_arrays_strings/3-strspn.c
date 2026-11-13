@@ -23,7 +23,7 @@ found = 1;
 i++;
 break;
 }
-found = 0;
+if (found == 0)
 break;
 i++;
 }
