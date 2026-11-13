@@ -19,9 +19,10 @@ found = 0;
 for (j = 0; accept[j] != '\0'; j++)
 {
 if (s[i] == accept[j])
+{
 found = 1;
-i++;
 break;
+}
 }
 if (found == 0)
 break;
