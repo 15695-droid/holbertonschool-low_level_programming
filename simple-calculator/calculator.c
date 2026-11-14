@@ -9,6 +9,8 @@
 int main (void)
 {
 char choice;
+float A;
+float B;
 
 printf("Welcome to Simple Calculator!\n");
 
@@ -24,7 +26,24 @@ if (choice != '1' && choice != '2' && choice != '3' && choice != '4' && choice !
 printf("Invalid choice\n");
 
 if (choice == '0')
+{
 printf("Bye!\n");
+return (0);
+}
 
+if (choice == '1')
+{
+printf("Addition: Choose numbers to Add\n");
+
+printf("Choose number A\n");
+
+scanf("%f", &A);
+
+printf("Choose number B\n");
+
+scanf("%f", &B);
+
+printf("The result is: %f\n", A + B);
+}
 return 0;
 }
