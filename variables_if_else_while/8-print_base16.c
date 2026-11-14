@@ -2,8 +2,8 @@
 
 /**
  * main - prints numbers in base 16 in lowercase, then a new line.
- * 
- * Return: void
+ *
+ * Return: 0
  */
 int main(void)
 {
@@ -17,5 +17,6 @@ for (c = 'a'; c <= 'f'; c++)
 putchar(c);
 
 putchar('\n');
+
 return (0);
 }
