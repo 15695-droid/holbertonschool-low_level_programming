@@ -88,6 +88,12 @@ printf("Choose number B\n");
 
 scanf("%f", &B);
 
+if(B == 0)
+{
+printf("can't divide by zero\n");
+return (0);
+}
+
 printf("The result is: %f\n", A/B);
 }
 
