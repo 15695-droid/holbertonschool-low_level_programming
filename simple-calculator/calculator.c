@@ -45,5 +45,51 @@ scanf("%f", &B);
 
 printf("The result is: %f\n", A + B);
 }
+
+if (choice == '2')
+{
+printf("Addition: Choose numbers to Subtract\n");
+
+printf("Choose number A\n");
+
+scanf("%f", &A);
+
+printf("Choose number B\n");
+
+scanf("%f", &B);
+
+printf("The result is: %f\n", A - B);
+}
+
+if (choice == '3')
+{
+printf("Addition: Choose numbers to Multiply\n");
+
+printf("Choose number A\n");
+
+scanf("%f", &A);
+
+printf("Choose number B\n");
+
+scanf("%f", &B);
+
+printf("The result is: %f\n", A * B);
+}
+
+if (choice == '4')
+{
+printf("Addition: Choose numbers to Divide\n");
+
+printf("Choose number A\n");
+
+scanf("%f", &A);
+
+printf("Choose number B\n");
+
+scanf("%f", &B);
+
+printf("The result is: %f\n", A/B);
+}
+
 return 0;
 }
