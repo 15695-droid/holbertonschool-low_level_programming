@@ -21,7 +21,9 @@ printf("Choice: ");
 scanf("%d", &choice);
 
 if (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 0)
+{
 printf("Invalid choice\n");
+}
 
 if (choice == 0)
 printf("Bye!\n");
