@@ -19,11 +19,11 @@ return (NULL);
 
 array = malloc(size * sizeof(char));
 
-if (array == 0) 
+if (array == 0)
 return (NULL);
 
 for (i = 0; i < size; i++)
-array[i] = c; 
+array[i] = c;
 
 return (array);
 }
