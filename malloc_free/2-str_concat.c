@@ -14,11 +14,11 @@ int i, len1;
 int j, len2;
 char *new_str;
 
-if (s1 == 0)
-return (NULL);
+if (s1 == NULL)
+s1 = "";
 
-if (s2 == 0)
-return (NULL);
+if (s2 == NULL)
+s2 = "";
 
 for (len1 = 0; s1[len1] != '\0'; len1++)
 ;
