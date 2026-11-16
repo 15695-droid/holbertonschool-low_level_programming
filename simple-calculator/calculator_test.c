@@ -14,7 +14,6 @@ float B;
 
 do 
 {
-    choice = 0;
     printf("Welcome to Simple Calculator!\n");
     printf("1) Add\n");
     printf("2) Subtract\n");
@@ -22,7 +21,7 @@ do
     printf("4) Divide\n");
     printf("0) Quit\n");
     printf("Choice: ");
-    scanf("%c", &choice);
+    scanf(" %c", &choice);
 
     switch (choice)
     {
