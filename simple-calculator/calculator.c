@@ -13,7 +13,6 @@ float A;
 float B;
 
 printf("Welcome to Simple Calculator!\n");
-
 printf("1) Add\n");
 printf("2) Subtract\n");
 printf("3) Multiply\n");
@@ -22,18 +21,14 @@ printf("0) Quit\n");
 printf("Choice: ");
 scanf("%c", &choice);
 
-
 if (choice == '0')
 {
 printf("Bye!\n");
 return (0);
 }
 
-
 if (choice != '1' && choice != '2' && choice != '3' && choice != '4' && choice != '0')
 printf("Invalid choice\n");
-
-
 
 if (choice == '1')
 {
@@ -48,28 +43,19 @@ printf("The result is: %f\n", A + B);
 if (choice == '2')
 {
 printf("Addition: Choose numbers to Subtract\n");
-
 printf("Choose number A\n");
-
 scanf("%f", &A);
-
 printf("Choose number B\n");
-
 scanf("%f", &B);
-
 printf("The result is: %f\n", A - B);
 }
 
 if (choice == '3')
 {
 printf("Addition: Choose numbers to Multiply\n");
-
 printf("Choose number A\n");
-
 scanf("%f", &A);
-
 printf("Choose number B\n");
-
 scanf("%f", &B);
 
 printf("The result is: %f\n", A * B);
@@ -78,13 +64,9 @@ printf("The result is: %f\n", A * B);
 if (choice == '4')
 {
 printf("Addition: Choose numbers to Divide\n");
-
 printf("Choose number A\n");
-
 scanf("%f", &A);
-
 printf("Choose number B\n");
-
 scanf("%f", &B);
 
 if(B == 0)
