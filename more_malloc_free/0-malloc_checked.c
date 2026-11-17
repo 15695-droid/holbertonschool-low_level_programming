@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - if malloc fails it does normal process termination with status value 98.
+ * malloc_checked - malloc check
  * @b: size
  *
  * Return: * allocated memory
