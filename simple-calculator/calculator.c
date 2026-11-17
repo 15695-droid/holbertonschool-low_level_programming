@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 
 /**
+ * main - simple calculator program with +, -, * and /
  *
+ * Return: 0
  */
 int main (void)
 {
