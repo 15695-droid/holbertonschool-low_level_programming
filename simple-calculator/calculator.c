@@ -12,71 +12,65 @@ char choice;
 float A;
 float B;
 
-printf("Welcome to Simple Calculator!\n");
-printf("1) Add\n");
-printf("2) Subtract\n");
-printf("3) Multiply\n");
-printf("4) Divide\n");
-printf("0) Quit\n");
-printf("Choice: ");
-scanf("%c", &choice);
-
-if (choice == '0')
+do 
 {
-printf("Bye!\n");
-return (0);
-}
+    printf("Welcome to Simple Calculator!\n");
+    printf("1) Add\n");
+    printf("2) Subtract\n");
+    printf("3) Multiply\n");
+    printf("4) Divide\n");
+    printf("0) Quit\n");
+    printf("Choice: ");
+    scanf(" %c", &choice);
 
-if (choice != '1' && choice != '2' && choice != '3' && choice != '4' && choice != '0')
-printf("Invalid choice\n");
-
-if (choice == '1')
-{
-printf("Addition: Choose numbers to Add\n");
-printf("Choose number A\n");
-scanf("%f", &A);
-printf("Choose number B\n");
-scanf("%f", &B);
-printf("The result is: %f\n", A + B);
-}
-
-if (choice == '2')
-{
-printf("Addition: Choose numbers to Subtract\n");
-printf("Choose number A\n");
-scanf("%f", &A);
-printf("Choose number B\n");
-scanf("%f", &B);
-printf("The result is: %f\n", A - B);
-}
-
-if (choice == '3')
-{
-printf("Addition: Choose numbers to Multiply\n");
-printf("Choose number A\n");
-scanf("%f", &A);
-printf("Choose number B\n");
-scanf("%f", &B);
-
-printf("The result is: %f\n", A * B);
-}
-
-if (choice == '4')
-{
-printf("Addition: Choose numbers to Divide\n");
-printf("Choose number A\n");
-scanf("%f", &A);
-printf("Choose number B\n");
-scanf("%f", &B);
-
-if(B == 0)
-{
-printf("can't divide by zero\n");
-return (0);
-}
-
-printf("The result is: %f\n", A/B);
-}
+    switch (choice)
+    {
+    default: 
+        printf("Please enter a number from the menu.\n");
+        break;
+    case '0':
+        printf("Bye!\n");
+        break;
+    case '1':
+        printf("Addition: Choose numbers to Add\n");
+        printf("Choose number A\n");
+        scanf("%f", &A);
+        printf("Choose number B\n");
+        scanf("%f", &B);
+        printf("The result is: %f\n", A + B);
+        break;
+    case '2':
+        printf("Subtraction: Choose numbers to Subtract\n");
+        printf("Choose number A\n");
+        scanf("%f", &A);
+        printf("Choose number B\n");
+        scanf("%f", &B);
+        printf("The result is: %f\n", A - B);
+        break;
+    case '3':
+        printf("Multiplication: Choose numbers to Multiply\n");
+        printf("Choose number A\n");
+        scanf("%f", &A);
+        printf("Choose number B\n");
+        scanf("%f", &B);
+        printf("The result is: %f\n", A * B);
+        break;
+    case '4':
+        printf("Division: Choose numbers to Divide\n");
+        printf("Choose number A\n");
+        scanf("%f", &A);
+        printf("Choose number B\n");
+        scanf("%f", &B);
+        if(B == 0)
+            {
+            printf("can't divide by zero\n");
+            break;
+            }
+        printf("The result is: %f\n", A/B);
+        break;
+    }
+    } 
+while (choice != '0');
 
 return 0;
 }
