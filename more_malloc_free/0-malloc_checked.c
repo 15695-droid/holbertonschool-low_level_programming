@@ -1,0 +1,21 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * malloc_checked - if malloc fails it does normal process termination with status value 98.
+ * @b: size
+ *
+ * Return: * allocated memory
+ */
+void *malloc_checked(unsigned int b)
+{
+
+char *str;
+
+str = malloc(b * sizeof(unsigned int));
+
+if (str == 0)
+exit(98);
+
+return (str);
+}
