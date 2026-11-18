@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
- * array_range - creates a range of array
+/**
+ * array_range - creates a range of array.
  * @min: least value
  * @max: maximum value
  *
