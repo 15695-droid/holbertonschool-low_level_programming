@@ -22,7 +22,7 @@ printf("%d", va_arg(args, int));
 
 if (separator != NULL)
 printf("%s", separator);
-	
+
 }
 
 va_end(args);
